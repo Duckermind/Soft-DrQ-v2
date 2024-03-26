@@ -1,6 +1,6 @@
-# Soft DrQ-v2
+# Soft DrQ-v2 and transfer learning 
 
-Soft DrQ-v2: Maximum Entropy RL framework based on Data-Augmented DrQ-v2 algorithm
+Soft DrQ-v2: Maximum Entropy RL framework based on Data-Augmented DrQ-v2 algorithm, aim transfering muti-tasks.
 
 Code implementation of the [Soft DrQ-v2][paper] algorithm in Pytorch.
 
@@ -28,6 +28,14 @@ Soft DrQ-v2 is a model-free and off-policy RL algorithm for continuous control t
 DrQ-v2 use DDPG as the backbone, and achieve nice performance in several continuous tasks.
 
 Here Soft DrQ-v2 use Soft-actor-critics as the backbone of the whole algorithm, and this modification is for transfering the model from previous tasks to current tasks, maximum entropy shows better transfer learning and continuous learning property under several control tasks.
+
+For example, after we trained the policy model parameters for the task of walker_walk, if we want the walker start to run, we need train the walker model from scratch.
+
+And if we reuse the previous 'walk' parameters to learn the 'run' parameters, this will be more efficiency. It means we can save and reload 'walk' model for learning harder similar tasks like 'run' based on the previous 'walk' task.
+
+This is the concept of transfer learning, hierarchical learning and continuous learning (life-long learning).
+
+Continuous reinforcement learning should help agent overcome task-specific problem and master multi-tasks.
 
 ## Instruction
 
