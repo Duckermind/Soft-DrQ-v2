@@ -1,4 +1,6 @@
-# Soft DrQ-v2: Maximum Entropy RL framework based on Data-Augmented DrQ-v2 algorithm
+# Soft DrQ-v2
+
+Soft DrQ-v2: Maximum Entropy RL framework based on Data-Augmented DrQ-v2 algorithm
 
 Code implementation of the [Soft DrQ-v2][paper] algorithm in Pytorch.
 
