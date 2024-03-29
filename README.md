@@ -1,4 +1,4 @@
-# Soft DrQ-v2 and transfer learning 
+# Soft DrQ and transfer learning 
 
 Soft DrQ-v2: Maximum Entropy RL framework based on Data-Augmented DrQ-v2 algorithm, aim transfering muti-tasks.
 
